@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/short_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Short Token"
+        android:textColor="#e34567"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/long_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="20dp"
+        android:hint="long"
+        android:textColor="@color/purple_200"
+        android:textSize="40dp" />
+
+
+</LinearLayout>
