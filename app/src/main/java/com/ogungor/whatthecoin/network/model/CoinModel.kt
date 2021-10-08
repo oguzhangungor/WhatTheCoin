@@ -9,5 +9,6 @@ data class CoinModel (
 
         var coinShortName:String?,
         var coinLongName:String?,
-        var coinContent:String?
+        var coinContent:String?,
+        var coinLogoUrl:String?
 ): Parcelable

@@ -2,15 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="4dp"
-    android:gravity="center"
-    >
+    android:background="@color/list_down_title_bg"
+    android:padding="5dp">
+
 
     <TextView
         android:id="@+id/topics_tv"
-        android:textSize="26sp"
-        android:paddingLeft="?android:expandableListPreferredChildPaddingLeft"
-        android:text="Topics TextView"
+        android:textSize="25sp"
+        android:paddingStart="?android:expandableListPreferredChildPaddingLeft"
+        android:textColor="@color/list_down_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 

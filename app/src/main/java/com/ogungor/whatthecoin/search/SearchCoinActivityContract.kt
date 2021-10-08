@@ -17,11 +17,14 @@ interface SearchCoinActivityContract {
     }
 
     interface View{
+
         fun initUi()
 
         fun showAllCoins(model : ArrayList<CoinModel>)
 
         fun showToast()
+
+        fun filterCoin()
 
     }
 

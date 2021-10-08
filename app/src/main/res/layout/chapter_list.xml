@@ -2,17 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="4dp"
     android:gravity="center"
-    android:background="@color/colorPrimary">
+    android:background="@color/list_group_title_bg"
+    android:padding="5dp">
 
     <TextView
         android:id="@+id/chapter_tv"
-        android:text="Chapter TextView"
-        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
-        android:textSize="38dp"
-        android:textColor="@android:color/black"
+        android:paddingStart="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:textSize="30sp"
+        android:textColor="@color/list_group_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        />
 
 </LinearLayout>

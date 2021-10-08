@@ -17,48 +17,21 @@ class SearchCoinActivity : BaseActivity(), SearchCoinActivityContract.View {
 
     private lateinit var searchCoinActivityPresenter: SearchCoinActivityContract.Presenter
 
-    private lateinit var searchView: SearchView
     private lateinit var layoutManager: LinearLayoutManager
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapterSearch: SearchCoinRecyclerAdapter
+    private lateinit var searchView: SearchView
 
-    override fun getLayout(): Int= R.layout.activity_seach_coin
+    override fun getLayout(): Int = R.layout.activity_seach_coin
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        searchCoinActivityPresenter=SearchCoinActivityPresenter().apply {
+        searchCoinActivityPresenter = SearchCoinActivityPresenter().apply {
             setView(this@SearchCoinActivity)
             create()
             getDataFromFireStore()
         }
 
-
-
-
-
-
-
-
-        /*searchView=findViewById(R.id.searchView)
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener,
-            androidx.appcompat.widget.SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(p0: String?): Boolean {
-                searchView.clearFocus()
-                if (coin.contains(p0)){
-                    coinAdapter.filter.filter(p0)
-                }
-               return false
-            }
-
-            override fun onQueryTextChange(p0: String?): Boolean {
-
-                coinAdapter.filter.filter(p0)
-
-                return false
-
-            }
-
-        })*/
 
     }
 
@@ -66,18 +39,27 @@ class SearchCoinActivity : BaseActivity(), SearchCoinActivityContract.View {
         showToastErrorMessage()
     }
 
+    override fun filterCoin() {
+        //adapterSearch.filterCoin()
+    }
+
     override fun initUi() {
 
-        recyclerView=findViewById(R.id.coinListView)
-        layoutManager= LinearLayoutManager(this)
-        recyclerView.layoutManager=layoutManager
-        adapterSearch= SearchCoinRecyclerAdapter(ArrayList<CoinModel>())
-        recyclerView.adapter=adapterSearch
+        recyclerView = findViewById(R.id.coinListView)
+        layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = layoutManager
+        adapterSearch = SearchCoinRecyclerAdapter(ArrayList<CoinModel>())
+        recyclerView.adapter = adapterSearch
+
+
+
     }
 
     override fun showAllCoins(model: ArrayList<CoinModel>) {
         adapterSearch.setList(model)
     }
+
+
 
 
 }

@@ -13,8 +13,8 @@
         android:id="@+id/eListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layoutDirection="rtl"
-        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout" />
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        android:layout_margin="5dp"/>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"

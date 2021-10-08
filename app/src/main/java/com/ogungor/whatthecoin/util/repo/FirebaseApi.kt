@@ -9,8 +9,9 @@ class FirebaseApi :NetworkService {
 
     companion object{
         const val COIN_SHORT_NAME="short_name"
-        const val COIN_LONG_NAME="long_name"
+        const val COIN_LONG_NAME="full_name"
         const val COIN_CONTENT ="content"
+        const val COIN_LOGO_URL ="logo_url"
     }
 
     private val firebaseDB:FirebaseFirestore= FirebaseFirestore.getInstance()
@@ -21,6 +22,7 @@ class FirebaseApi :NetworkService {
         tableName: String
     ) {
         val FirebaseApiTable=tableName
+
         firebaseDB.collection(FirebaseApiTable).addSnapshotListener { snaphot, exception ->
 
             if (exception!=null)
@@ -36,7 +38,8 @@ class FirebaseApi :NetworkService {
                             CoinModel(
                                 coinShortName = document.getString(COIN_SHORT_NAME),
                                 coinLongName = document.getString(COIN_LONG_NAME),
-                                coinContent = document.getString(COIN_CONTENT)
+                                coinContent = document.getString(COIN_CONTENT),
+                                coinLogoUrl = document.getString(COIN_LOGO_URL)
                             )
                         )
                     }

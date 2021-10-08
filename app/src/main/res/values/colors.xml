@@ -8,4 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#3f51b5</color>
+    <color name="coin_full_name">#74a4bc</color>
+    <color name="list_group_title">#e9d8a6</color>
+    <color name="list_group_title_bg">#023047</color>
+    <color name="list_down_title">#ae2012</color>
+    <color name="list_down_title_bg">#e9d8a6</color>
+
 </resources>

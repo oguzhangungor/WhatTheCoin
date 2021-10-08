@@ -3,26 +3,41 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:background="@color/black">
+    android:background="@xml/search_recycler_row_bg"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/coinLogo"
+        android:layout_gravity="center"
+        android:cropToPadding="true"
+        android:layout_margin="5dp"/>
 
     <TextView
         android:id="@+id/short_name"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_margin="5dp"
         android:text="Short Token"
         android:textColor="#e34567"
-        android:textSize="50dp" />
+        android:textSize="20sp"
+        android:gravity="center"
+        />
 
     <TextView
         android:id="@+id/long_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_margin="5dp"
-        android:layout_marginLeft="20dp"
-        android:hint="long"
-        android:textColor="@color/purple_200"
-        android:textSize="40dp" />
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/coin_full_name"
+        android:hint="Long Token"
+        android:textSize="16sp"
+        />
 
 
 </LinearLayout>

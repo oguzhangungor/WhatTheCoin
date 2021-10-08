@@ -42,4 +42,7 @@ class SearchCoinActivityPresenter : SearchCoinActivityContract.Presenter{
            }
        },"CoinList")
     }
+
+
+    fun filterRecyclerView(){}
 }

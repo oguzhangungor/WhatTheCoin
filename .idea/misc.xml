@@ -6,10 +6,14 @@
         <entry key="..\:/Users/ogungor/AndroidStudioProjects/WhatTheCoin/app/src/main/res/drawable/searchview_background.xml" value="0.37604166666666666" />
         <entry key="..\:/Users/ogungor/AndroidStudioProjects/WhatTheCoin/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/ogungor/AndroidStudioProjects/WhatTheCoin/app/src/main/res/layout/activity_seach_coin.xml" value="0.35643115942028986" />
+        <entry key="..\:/Users/ogungor/AndroidStudioProjects/WhatTheCoin/app/src/main/res/layout/chapter_list.xml" value="0.3500905797101449" />
         <entry key="..\:/Users/ogungor/AndroidStudioProjects/WhatTheCoin/app/src/main/res/layout/list_group.xml" value="0.3596014492753623" />
         <entry key="..\:/Users/ogungor/AndroidStudioProjects/WhatTheCoin/app/src/main/res/layout/list_item.xml" value="0.3596014492753623" />
         <entry key="..\:/Users/ogungor/AndroidStudioProjects/WhatTheCoin/app/src/main/res/layout/recycler_view_list_row.xml" value="0.20104166666666667" />
+        <entry key="..\:/Users/ogungor/AndroidStudioProjects/WhatTheCoin/app/src/main/res/layout/seach_recycler_row.xml" value="0.3500905797101449" />
+        <entry key="..\:/Users/ogungor/AndroidStudioProjects/WhatTheCoin/app/src/main/res/layout/topics_list.xml" value="0.3500905797101449" />
         <entry key="..\:/Users/ogungor/AndroidStudioProjects/WhatTheCoin/app/src/main/res/menu/bottom_menu.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/ogungor/AndroidStudioProjects/WhatTheCoin/app/src/main/res/xml/search_recycler_row_bg.xml" value="0.3500905797101449" />
       </map>
     </option>
   </component>
