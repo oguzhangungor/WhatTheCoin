@@ -24,8 +24,7 @@ interface SearchCoinActivityContract {
 
         fun showToast()
 
-        fun filterCoin()
-
+        fun filterSearchCoin(model: ArrayList<CoinModel>)
     }
 
 }

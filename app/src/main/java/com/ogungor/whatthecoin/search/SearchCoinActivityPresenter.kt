@@ -33,6 +33,8 @@ class SearchCoinActivityPresenter : SearchCoinActivityContract.Presenter{
               if (model.isNotEmpty()){
                   view?.run {
                       showAllCoins(model)
+                      filterSearchCoin(model)
+
                   }
               }
            }
@@ -44,5 +46,4 @@ class SearchCoinActivityPresenter : SearchCoinActivityContract.Presenter{
     }
 
 
-    fun filterRecyclerView(){}
 }
