@@ -12,3 +12,7 @@ fun Activity.launchMainToSearchActivity(){
 fun Activity.showToastErrorMessage(){
     Toast.makeText(this,"Hata mesajı",Toast.LENGTH_SHORT).show()
 }
+
+fun Activity.showToastClickMessage(position:Int){
+    Toast.makeText(this,"Hata mesajı  $position ",Toast.LENGTH_SHORT).show()
+}

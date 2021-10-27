@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WhatTheCoin">
         <activity
-            android:name=".MainActivity"
+            android:name="com.ogungor.whatthecoin.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +20,8 @@
         </activity>
 
         <activity android:name=".search.SearchCoinActivity"/>
+        <activity android:name=".details.DetailsActivity"/>
+        <activity android:name=".newsdetail.NewsDetailsActivity"/>
     </application>
 
 </manifest>

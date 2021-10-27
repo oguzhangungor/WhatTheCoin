@@ -1,4 +1,4 @@
-package com.ogungor.whatthecoin
+package com.ogungor.whatthecoin.main.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,12 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseExpandableListAdapter
 import android.widget.TextView
+import com.ogungor.whatthecoin.R
 
 class ExpandableListViewAdapter : BaseExpandableListAdapter {
 
-    private lateinit var context: Context
-    private lateinit var chapterList:List<String>
-    private lateinit var topicsList:HashMap<String,List<String>>
+    private var context: Context
+    private var chapterList:List<String>
+    private var topicsList:HashMap<String,List<String>>
 
     constructor(
         context: Context,

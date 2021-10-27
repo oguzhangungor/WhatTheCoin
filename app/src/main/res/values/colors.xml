@@ -13,5 +13,6 @@
     <color name="list_group_title_bg">#023047</color>
     <color name="list_down_title">#ae2012</color>
     <color name="list_down_title_bg">#e9d8a6</color>
+    <color name="news_title_bg">#84ACCE</color>
 
 </resources>

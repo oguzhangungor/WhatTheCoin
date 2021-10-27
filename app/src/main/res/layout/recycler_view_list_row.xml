@@ -24,7 +24,7 @@
         android:text="Short Token"
         android:textColor="#e34567"
         android:textSize="20sp"
-        android:gravity="center"
+        android:gravity="fill_vertical"
         />
 
     <TextView

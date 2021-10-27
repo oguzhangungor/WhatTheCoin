@@ -1,4 +1,4 @@
-package com.ogungor.whatthecoin
+package com.ogungor.whatthecoin.search
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,13 +6,14 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.ogungor.whatthecoin.R
 import com.ogungor.whatthecoin.network.model.CoinModel
 import com.squareup.picasso.Picasso
 import java.util.*
 import kotlin.collections.ArrayList
 
 class SearchCoinRecyclerAdapter(
-    private var coinList: ArrayList<CoinModel>,
+    private var coinList: ArrayList<CoinModel>, private val listener: OnItemClickListener
 ) : RecyclerView.Adapter<SearchCoinRecyclerAdapter.BetHolder>() {
 
 
@@ -36,6 +37,8 @@ class SearchCoinRecyclerAdapter(
                 Picasso.get().load(currentCoin.coinLogoUrl).into(imageCoinLogo)
             }
         }
+
+
 
 
     }
@@ -74,15 +77,26 @@ class SearchCoinRecyclerAdapter(
     }
 
 
-    inner class BetHolder(view: View) : RecyclerView.ViewHolder(view) {
+
+    inner class BetHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListener {
         var textShortName: TextView = view.findViewById(R.id.short_name)
         var textLongName: TextView = view.findViewById(R.id.long_name)
         var imageCoinLogo: ImageView = view.findViewById(R.id.coinLogo)
 
+        init {
+            view.setOnClickListener(this)
+        }
+
+        override fun onClick(p0: View?) {
+            val position:Int= adapterPosition
+            if (position!=RecyclerView.NO_POSITION) {
+                listener.onItemClick(coinList[position])
+            }
+        }
     }
 
     interface OnItemClickListener {
-        fun onItemClick(model:CoinModel)
+        fun onItemClick(model: CoinModel)
     }
 
 
